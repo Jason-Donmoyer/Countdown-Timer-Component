@@ -53,4 +53,28 @@ body {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: var(--fw-bold);
+  background-color: var(--dark-blueish-black);
+  color: var(--white);
+}
+
+
+/* Main Container */
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Countdown Container */
+.countdown-container {
+  width: 328px;
+}
+
+
+/* Countdown Timer Container */
+.countdown-timer-container {
+  display: flex;
 }
