@@ -70,11 +70,38 @@ body {
 
 /* Countdown Container */
 .countdown-container {
-  width: 328px;
+  width: 20.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Countdown Container Heading */
+.countdown-container-heading {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 3rem;
+  letter-spacing: 0.3125rem;
+  margin: 0 0 1.125rem 0;
+}
+
+
+/* Countdown-Container-Heading-Date */
+.countdown-container-heading-date {
+  color: var(--blue);
 }
 
 
 /* Countdown Timer Container */
 .countdown-timer-container {
   display: flex;
+  justify-content: space-between;
+}
+
+
+/* Timer Number Container */
+.timer-number-container {
+  width: 4.5rem;
+  height: 5.75rem;
+  text-align: center;
 }
