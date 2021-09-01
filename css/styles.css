@@ -17,6 +17,7 @@
   --very-dark-blue: hsl(222, 22%, 26%);
   --dark-blueish-black: hsl(228, 22%, 19%);
   --blue: hsl(228, 100%, 66%);
+  --grey: hsl(227, 13%, 52%);
 
 
   /* FONTS */
@@ -96,6 +97,7 @@ body {
 .countdown-timer-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 
@@ -103,5 +105,29 @@ body {
 .timer-number-container {
   width: 4.5rem;
   height: 5.75rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
   text-align: center;
+  background-color: var(--very-dark-blue);
+  border-radius: 0.25rem;
+}
+
+
+/* Timer Number */
+.timer-number {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 0.6875rem;
+  margin-bottom: 0;
+}
+
+
+/* Timer Copy */
+.timer-copy {
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  color: var(--grey);
+  padding: 0;
+  margin: 0;
 }
