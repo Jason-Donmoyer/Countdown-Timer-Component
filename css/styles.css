@@ -1,0 +1,56 @@
+/******************************/
+/* IMPORTS */
+/******************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+
+/******************************/
+/* VARIABLES */
+/******************************/
+
+:root {
+
+  /* COLORS */
+
+  --white: hsl(0, 0%, 100%);
+  --very-dark-blue: hsl(222, 22%, 26%);
+  --dark-blueish-black: hsl(228, 22%, 19%);
+  --blue: hsl(228, 100%, 66%);
+
+
+  /* FONTS */
+
+  /* font-family */
+  --main-font: 'Kumbh Sans', sans-serif;
+
+  /* font-weight */
+  --fw-bold: 700;
+
+}
+
+
+/******************************/
+/* MAIN STYLES */
+/******************************/
+
+
+/* Box Sizing With Inheritence */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* Body */
+body {
+  font-size: 16px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: var(--fw-bold);
+}
