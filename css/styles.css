@@ -197,12 +197,14 @@ body {
   .timer-number {
     font-size: 3.5rem;
     margin-top: 1rem;
+    padding-top: 0.21rem;
   }
 
 
   /* Timer Copy */
   .timer-copy {
     font-size: 1rem;
+    padding-top: 0.75rem;
   }
 
 }
