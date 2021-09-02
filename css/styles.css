@@ -213,7 +213,35 @@ body {
 /********** DESKTOP **********/
 
 @media screen and (min-width: 1050px) {
+
+
+  /* Countdown Container*/
+  .countdown-container {
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+  }
+
+
+  /* Countdown Copy Container */
+  .countdown-copy-container {
+    width: 28rem;
+    margin-left: 10%;
+  }
+
+
+  /* Countdown Container Heading */
+  .countdown-container-heading {
+    text-align: left;
+  }
   
+
+  /* Get Started Button */
+  .get-started-btn {
+    margin-right: 10%;
+  }
+
+
   /* Get Started Button Hover State */
   .get-started-btn:hover {
     background-color: var(--light-blue);
