@@ -6,6 +6,10 @@ let UIHours = document.getElementById("hours");
 let UIMinutes = document.getElementById("minutes");
 let UISeconds = document.getElementById("seconds");
 
+const getStartedBtn = document.getElementById("get-started-btn");
+
+getStartedBtn.addEventListener("click", getStarted);
+
 
 // Date Functionality
 const today = addMonths(new Date(), 4);
@@ -16,6 +20,12 @@ const year = today.getFullYear();
 
 const fullDay = dayOfMonth + ' ' + month + ' ' + year;
 console.log(fullDay);
+
+
+// Dynamic Values for UI
+
+// Heading Text
+countdownDateHeading.innerHTML = fullDay;
 
 
 // Countdown Functionality
@@ -43,12 +53,9 @@ let timer = setInterval(function() {
   UIMinutes.innerHTML = minutes;
   UISeconds.innerHTML = seconds;
 
+  if (dif < 0) { alert("Hooray!"); }
+
 }, 1000);
-
-// Dynamic Values for UI
-
-// Heading Text
-countdownDateHeading.innerHTML = fullDay;
 
 
 // FUNCTIONS
@@ -107,4 +114,9 @@ function getNewMonth(today) {
       break;
   }
   return month;
+}
+
+// Function for Get Started Button
+function getStarted() {
+  alert('Sorry, something went wrong!');
 }
