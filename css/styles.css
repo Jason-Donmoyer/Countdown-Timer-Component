@@ -98,7 +98,7 @@ body {
 .countdown-timer-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 
@@ -159,6 +159,61 @@ body {
 /* Get Started Button Hover State */
 .get-started-btn:hover {
   cursor: pointer;
-  background-color: var(--light-blue);
+  /* background-color: var(--light-blue); */
 }
 
+
+/******************************/
+/* MEDIA QUERIES */
+/******************************/
+
+
+/********** TABLET **********/
+
+@media screen and (min-width: 539px) {
+  
+
+  /* Countdown Container */
+  .countdown-container {
+    width: 28rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+  /* Countdown Timer Container */
+  .countdown-timer-container {
+    margin-bottom: 3rem;
+  }
+
+
+  /* Timer Number Container */
+  .timer-number-container {
+    width: 6.25rem;
+    height: 8rem;
+  }
+
+  
+  /* Timer Number */
+  .timer-number {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+  }
+
+
+  /* Timer Copy */
+  .timer-copy {
+    font-size: 1rem;
+  }
+
+}
+
+
+/********** DESKTOP **********/
+
+@media screen and (min-width: 1050px) {
+  
+  /* Get Started Button Hover State */
+  .get-started-btn:hover {
+    background-color: var(--light-blue);
+  }
+}
